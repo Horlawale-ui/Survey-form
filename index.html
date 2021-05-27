@@ -16,18 +16,19 @@
                <div class="logo">
                 <img src="./img/Lasaco_logo_small.png" alt="Lasaco Assurance PLC" width="100%">
                </div> 
-              <h3>Lasaco Assurance: Customer satisfaction</h3>
+              <h3>Customer Satisfaction Survey</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae provident et dolores quos labore. Fugit fuga veritatis aliquam ipsam ducimus et eaque magnam natus, id illum sunt rem, officiis dicta!
+                Thank you for choosing Lasaco Assurance Plc as your preferred insurance partner.<br>
+Lasaco Assurance Plc is conducting a survey on customer satisfaction and we will like to gain insights into your views about our company, products and services. Your feedback will go a long way in helping us serve you better.<br>
+Kindly note that this survey will take only 3 minutes of your time and your responses will be collated anonymously
               </p>
             </div>
             <div class="Survey" >
-              <h3>Survey</h3>
               <form id="contact-form">
-                <ol>
+                <ol onchange="checkValues()">
                   <section id="section-1">
                     <li>
-                        <label for="gender">Gender : </label><br>
+                        <div class="label"><label for="gender">Gender : </label></div>
                         <select id="option-values">
                           <option value="default">Select Sex</option>
                           <option value="Male" id="gender_1" name=gender>Male</option>
@@ -36,57 +37,57 @@
                         </select>
                     </li>
                     <li>
-                      <label for="state">State of business/residence</label><br>
+                      <div class="label"><label for="state">State of business/residence</label></div>
                         <select id="select">
                           <option value="default" id="state">Default</option>
                         </select>
                     </li>
                     <li>
-                      <label for="occupation">What is your occupation?</label><br>
-                        <label for="student"><input type="radio" id="occupation_1" name="employed"  data-name="occupation" value="student">Student</label><br>
-                        <label for="employed"><input type="radio" id="occupation_2" name="employed"  data-name="occupation" value="Employed(public sector)">Employed (public sector)</label><br>
-                        <label for="employed"><input type="radio" id="occupation_3" name="employed"  data-name="occupation" value="Employed(private sector)">Employed (private sector)</label><br>
-                        <label for="unemployed"><input type="radio" id="occupation_4" name="employed"  data-name="occupation" value="unemployed">Unemployed</label><br>
-                        <label for="Self-employed"><input type="radio" id="occupation_5" name="employed"  data-name="occupation" value="Self-employed">Self-employed</label><br>
-                        <label for="Retired"><input type="radio" id="occupation_6" name="employed"  data-name="occupation" value="Retired">Retired</label>
+                      <div class="label"><label for="occupation">What is your occupation?</label></div>
+                        <div class="options-values"><label for="occupation_1">Student</label><input type="radio" id="occupation_1" name="employed"  data-name="occupation" value="student"></div>
+                        <div class="options-values"><label for="occupation_2">Employed (public sector)</label><input type="radio" id="occupation_2" name="employed"  data-name="occupation" value="Employed(public sector)"></div>
+                        <div class="options-values"><label for="occupation_3">Employed (private sector)</label><input type="radio" id="occupation_3" name="employed"  data-name="occupation" value="Employed(private sector)"></div>
+                        <div class="options-values"><label for="occupation_4">Unemployed</label><input type="radio" id="occupation_4" name="employed"  data-name="occupation" value="unemployed"></div>
+                        <div class="options-values"><label for="occupation_5">Self-employed</label><input type="radio" id="occupation_5" name="employed"  data-name="occupation" value="Self-employed"></div>
+                        <div class="options-values"><label for="occupation_6">Retired</label><input type="radio" id="occupation_6" name="employed"  data-name="occupation" value="Retired"></div>
                     </li>
                     <li>
-                      <label for="">What is your age bracket?</label><br>
-                        <label for="age1"><input type="radio" id="age_1" name="age" value="18-20" data-name="age">18-20</label><br>
-                        <label for="age2"><input type="radio" id="age_2" name="age" value="21-35" data-name="age">21-35</label><br>
-                        <label for="age3"><input type="radio" id="age_3" name="age" value="35-50" data-name="age">35 - 50</label>
+                      <div class="label"><label for="">What is your age bracket?</label></div>
+                        <div class="options-values"><label for="age_1">18 - 20</label><input type="radio" id="age_1" name="age" value="18-20" data-name="age"></div>
+                        <div class="options-values"><label for="age_2">21 - 35</label><input type="radio" id="age_2" name="age" value="21-35" data-name="age"></div>
+                        <div class="options-values"><label for="age_3">35 - 50</label><input type="radio" id="age_3" name="age" value="35-50" data-name="age"></div>
                       </li>
                     <li>
-                      <label for="education">What is your level of education?</label><br>
-                       <label for="primary"><input type="radio" id="education_1" name="degree" data-name="files" value="primary">Primary</label><br>
-                       <label for="secondary"><input type="radio" id="education_2" name="degree" data-name="files" value="Secondary">Secondary</label><br>
-                       <label for="diploma"><input type="radio" id="education_3" name="degree" data-name="files" value="Diploma">Diploma</label><br>
-                       <label for="hnd"><input type="radio" id="education_4" name="degree" data-name="files" value="HND/BSC">HND/BSC</label><br>
-                       <label for="phd"><input type="radio" id="education_5" name="degree" data-name="files" value="MSD/PHD">MSC/PHD</label>
+                      <div class="label"><label for="education">What is your level of education?</label></div>
+                       <div class="options-values"><label for="education_1">Primary</label><input type="radio" id="education_1" name="degree" data-name="files" value="primary"></div>
+                       <div class="options-values"><label for="education_2">Secondary</label><input type="radio" id="education_2" name="degree" data-name="files" value="Secondary"></div>
+                       <div class="options-values"><label for="education_3">Diploma</label><input type="radio" id="education_3" name="degree" data-name="files" value="Diploma"></div>
+                       <div class="options-values"><label for="education_4">HND/BSC</label><input type="radio" id="education_4" name="degree" data-name="files" value="HND/BSC"></div>
+                       <div class="options-values"><label for="education_5">MSC/PHD</label><input type="radio" id="education_5" name="degree" data-name="files" value="MSD/PHD"></div>
                     </li>
                   </section>
 
                   <section id="section-2">
                     <li>
-                      <label for="">Overall, how satisfied are you with Lasaco Assurance Plc products and services?</label><br>
-                        <label for="satisfied"><input type="radio" id="satisfied" name="satisfied" value="satisfied">Satisfied</label><br>
-                        <label for="satisfied-1"><input type="radio" id="unsatisfied" name="satisfied" value="unsatisfied">Unsatisfied</label>
+                      <div class="label"><label for="">Overall, how satisfied are you with Lasaco Assurance Plc products and services?</label></div>
+                        <div class="options-values"><label for="satisfied">Satisfied</label><input type="radio" id="satisfied" name="satisfied" value="satisfied"></div>
+                        <div class="options-values"><label for="unsatisfied">Unsatisfied</label><input type="radio" id="unsatisfied" name="satisfied" value="unsatisfied"></div>
                     </li>
                     <li>
                       <label for="">What necessitate your answer above?</label>
                       <div>
-                        <textarea title="Reason for the above answer" id="neccessitate" ></textarea>
+                        <textarea title="Reason for the above answer" id="neccessitate" required minlength="20"></textarea>
                       </div>
                     </li>
                     <li>
-                      <label for="">Would you recommend friends and family to insure with Lasaco Assurance Plc?</label><br>
-                        <label for="yes"><input type="radio" id="yes" name="y/n" value="yes">Yes</label><br>
-                        <label for="no"><input type="radio" id="yes" name="y/n" value="no">No</label>
+                      <div class="label"><label for="">Would you recommend friends and family to insure with Lasaco Assurance Plc?</label></div>
+                        <div class="options-values"><label for="yes">Yes</label><input type="radio" id="yes" name="y/n" value="yes"></div>
+                        <div class="options-values"><label for="no">No</label><input type="radio" id="no" name="y/n" value="no"></div>
                     </li>
                     <li>
                       <label for="">What one thing can we do to make your experience with us better?</label>
                       <div>
-                        <textarea title="How we can help you better?" id="help"></textarea>
+                        <textarea title="How we can help you better?" id="help" required minlength="20"></textarea>
                       </div>
                     </li>
                   </section>
@@ -94,6 +95,9 @@
                 </ol>
                 <p class="full">
                   <button id="btn" type="submit">Submit</button>
+                </p>
+                <p style="text-align: center;">
+                  &copy; COPYRIGHT | LASACO | DESIGNED BY OLAWALE
                 </p>
                 <p class="alert-msg">Survey Successfully Sent!</p>
               </form>

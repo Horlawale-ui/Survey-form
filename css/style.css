@@ -3,11 +3,19 @@
 }
   
 body{
-    background:#92bde7;
+   /* background:#92bde7;
     color:#485e74;
     line-height:1.6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding:1em;
+    padding:1em;*/
+    font-family: Tahoma, sans-serif;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 12pt;
+    color: #2A293E;
 }
 
 .container{
@@ -36,7 +44,6 @@ body{
 
 .company-info .logo{
       width: 150px;
-      transform: translateY(-10px);
 }
   
 .company-info h3{
@@ -44,42 +51,72 @@ body{
       margin: 0;
 }
 
+.company-info p{
+  width: 70%;
+  margin: 15px auto;
+}
+
 .Survey{
-    background:#f9feff;
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border-top: 10px solid #f45702;
 }
 
   /* FORM STYLES */
-.Survey h3{
-    text-align: center;
-}
-
+  label, input, textarea{
+  font-size: 12pt;
+  line-height: 12pt * 2;
+  }
+/*
+input
+  margin-bottom: $font-size * 2
+  */
 .Survey form{
   padding: 5px;
 }
 
-.Survey form label{
-
+.Survey form li {
+  margin: 10px 0;
 }
-  
-.Survey form p{
-    
+
+.Survey form li .label{
+  margin: 10px 0;
+}
+
+.Survey form li select {
+  padding: 5px;
+}
+
+.Survey form li .options-values {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px 0;
+}
+
+.Survey form li .options-values input {
+  justify-self: end;
 }
   
 .Survey form button, .Survey form textarea{
     width:100%;
+    margin: 10px 0;
     padding:1em;
+    cursor: pointer;
     border:1px solid #c9e6ff;
 }
 
 
 .Survey form #section-2 {
-  
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-2000px);
 }
 
 .Survey form.reveal #section-2 {
   position: relative;
   opacity: 1;
-  max-height: 800px;
+  height: 600px;
   transform: translateX(0);
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -125,11 +162,30 @@ body{
     font-size: 30px;
   }
 
+  .Survey {
+    padding: 15px 30px;
+  }
+
+  .Survey form li .options-values {
+    width: 100%;
+    grid-template-columns: 1fr 6fr;
+    grid-auto-flow: column;
+  }
+  
+  .Survey form li .options-values label {
+    grid-column: 2;
+  }
+  
+  .Survey form li .options-values input {
+    justify-self: start;
+    grid-column: 1;
+  }
+
   .Survey form textarea {
-    width: 80%;
+    width: 90%;
   }
   
   .Survey form.reveal #section-2 {
-    max-height: 600px;
-}
+    height: 800px;
+  }
 }

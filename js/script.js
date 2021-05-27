@@ -14,15 +14,14 @@ for (var i =0; i < arr.length; i++)
     option.setAttribute("value",arr[i]);
     select.insertBefore(option, select.lastChild);
 }
-/*
+
 function checkValues() {
     var age = document.querySelectorAll('input[data-name="age"]'),
     education = document.querySelectorAll('input[data-name="files"]'),
     occupation = document.querySelectorAll('input[data-name="occupation"]'),
     gender = document.getElementById('option-values'),
-    genderValue = gender.options[gender.selectedIndex].value;
-
-        if (genderValue === 'gender') {
+    genderValue = gender.options[gender.selectedIndex].value.length;
+    if (genderValue < 7) {
             occupation.forEach(function (e) {
                 if (e.checked) {
                     age.forEach(function (e) {
@@ -31,19 +30,16 @@ function checkValues() {
                             if (e.checked) {
                                 var form = document.querySelector('form');
                                 form.classList.add('reveal');
-                            }})
                         }})
                 }})
-        }
-
+            }})
+    }
 }
 
-*/
 
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+var firebaseConfig = {
     apiKey: "AIzaSyCQMb52ozVK3Ky_b0JcSWwjV7UCy3c-cnM",
     authDomain: "lasaco-survey.firebaseapp.com",
     projectId: "lasaco-survey",
@@ -51,13 +47,14 @@ function checkValues() {
     messagingSenderId: "77255594523",
     appId: "1:77255594523:web:ad9ce05d30c7c42b4b1ebe",
     measurementId: "G-3XD83KWLTC"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+};
 
-  //Reference message collection
-  var messageRef = firebase.database().ref('messages');
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+//Reference message collection
+var messageRef = firebase.database().ref('messages');
 
 
 //listen for submit form
