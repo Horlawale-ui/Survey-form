@@ -14,40 +14,100 @@
         <div class="wrapper animated bounceInLeft">
             <div class="company-info">
                <div class="logo">
-                <img src="./img/ng-lasaco-logo.png" alt="Lasaco Assurance PLC" width="100%">
+                <img src="./img/Lasaco_logo_small.png" alt="Lasaco Assurance PLC" width="100%">
                </div> 
-              <h3>Lasaco Assurance Plc</h3>
-              <ul>
-                <li><i class="fa fa-road"></i> 44 Something st</li>
-                <li><i class="fa fa-phone"></i> (555) 555-5555</li>
-                <li><i class="fa fa-envelope"></i> lasascoassurance@customerservice.com</li>
-              </ul>
+              <h3>Lasaco Assurance: Customer satisfaction</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae provident et dolores quos labore. Fugit fuga veritatis aliquam ipsam ducimus et eaque magnam natus, id illum sunt rem, officiis dicta!
+              </p>
             </div>
-            <div class="contact" id="contact-form">
+            <div class="Survey" >
               <h3>Survey</h3>
-              <form>
-                <p>
-                  <label>Name</label>
-                  <input type="text" name="name">
-                </p>
-                <p>
-                  <label>Email Address</label>
-                  <input type="email" name="email">
-                </p>
-                <p>
-                  <label>Phone Number</label>
-                  <input type="text" name="phone">
-                </p>
+              <form id="contact-form">
+                <ol>
+                  <section id="section-1">
+                    <li>
+                        <label for="gender">Gender : </label><br>
+                        <select id="option-values">
+                          <option value="default">Select Sex</option>
+                          <option value="Male" id="gender_1" name=gender>Male</option>
+                          <option value="Female" id="gender_2" 
+                          name=gender>Female</option>
+                        </select>
+                    </li>
+                    <li>
+                      <label for="state">State of business/residence</label><br>
+                        <select id="select">
+                          <option value="default" id="state">Default</option>
+                        </select>
+                    </li>
+                    <li>
+                      <label for="occupation">What is your occupation?</label><br>
+                        <label for="student"><input type="radio" id="occupation_1" name="employed"  data-name="occupation" value="student">Student</label><br>
+                        <label for="employed"><input type="radio" id="occupation_2" name="employed"  data-name="occupation" value="Employed(public sector)">Employed (public sector)</label><br>
+                        <label for="employed"><input type="radio" id="occupation_3" name="employed"  data-name="occupation" value="Employed(private sector)">Employed (private sector)</label><br>
+                        <label for="unemployed"><input type="radio" id="occupation_4" name="employed"  data-name="occupation" value="unemployed">Unemployed</label><br>
+                        <label for="Self-employed"><input type="radio" id="occupation_5" name="employed"  data-name="occupation" value="Self-employed">Self-employed</label><br>
+                        <label for="Retired"><input type="radio" id="occupation_6" name="employed"  data-name="occupation" value="Retired">Retired</label>
+                    </li>
+                    <li>
+                      <label for="">What is your age bracket?</label><br>
+                        <label for="age1"><input type="radio" id="age_1" name="age" value="18-20" data-name="age">18-20</label><br>
+                        <label for="age2"><input type="radio" id="age_2" name="age" value="21-35" data-name="age">21-35</label><br>
+                        <label for="age3"><input type="radio" id="age_3" name="age" value="35-50" data-name="age">35 - 50</label>
+                      </li>
+                    <li>
+                      <label for="education">What is your level of education?</label><br>
+                       <label for="primary"><input type="radio" id="education_1" name="degree" data-name="files" value="primary">Primary</label><br>
+                       <label for="secondary"><input type="radio" id="education_2" name="degree" data-name="files" value="Secondary">Secondary</label><br>
+                       <label for="diploma"><input type="radio" id="education_3" name="degree" data-name="files" value="Diploma">Diploma</label><br>
+                       <label for="hnd"><input type="radio" id="education_4" name="degree" data-name="files" value="HND/BSC">HND/BSC</label><br>
+                       <label for="phd"><input type="radio" id="education_5" name="degree" data-name="files" value="MSD/PHD">MSC/PHD</label>
+                    </li>
+                  </section>
+
+                  <section id="section-2">
+                    <li>
+                      <label for="">Overall, how satisfied are you with Lasaco Assurance Plc products and services?</label><br>
+                        <label for="satisfied"><input type="radio" id="satisfied" name="satisfied" value="satisfied">Satisfied</label><br>
+                        <label for="satisfied-1"><input type="radio" id="unsatisfied" name="satisfied" value="unsatisfied">Unsatisfied</label>
+                    </li>
+                    <li>
+                      <label for="">What necessitate your answer above?</label>
+                      <div>
+                        <textarea title="Reason for the above answer" id="neccessitate" ></textarea>
+                      </div>
+                    </li>
+                    <li>
+                      <label for="">Would you recommend friends and family to insure with Lasaco Assurance Plc?</label><br>
+                        <label for="yes"><input type="radio" id="yes" name="y/n" value="yes">Yes</label><br>
+                        <label for="no"><input type="radio" id="yes" name="y/n" value="no">No</label>
+                    </li>
+                    <li>
+                      <label for="">What one thing can we do to make your experience with us better?</label>
+                      <div>
+                        <textarea title="How we can help you better?" id="help"></textarea>
+                      </div>
+                    </li>
+                  </section>
+
+                </ol>
                 <p class="full">
-                  <label>Message</label>
-                  <textarea name="message" rows="5"></textarea>
+                  <button id="btn" type="submit">Submit</button>
                 </p>
-                <p class="full">
-                  <button type="submit">Submit</button>
-                </p>
-                <p id="alert-msg">Survey Successfully Sent!</p>
+                <p class="alert-msg">Survey Successfully Sent!</p>
               </form>
-            </div>
           </div>
+        </div>
     </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+<!-- Script -->
+    <script src="./js/script.js"></script>
 </body>
+</html>
