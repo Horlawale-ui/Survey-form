@@ -126,7 +126,8 @@ function submitForm(e){
 
     //Clear Form
     document.getElementById('contact-form').reset();
-    location.reload();
+    
+    
 
     
 }

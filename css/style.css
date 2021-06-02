@@ -223,6 +223,7 @@ input
 @media only screen and (max-width: 560px) {
   .company-info p {
     font-size: 13px;
+    text-align: center;
   }
   
   .company-info .logo{
