@@ -224,6 +224,7 @@ input
   .company-info p {
     font-size: 13px;
     text-align: center;
+    margin: 0 auto;
   }
   
   .company-info .logo{
@@ -261,8 +262,19 @@ input
     height: 800px;
   }
 }
+@media only screen and (max-width: 430px){
+  .company-para {
+    font-size: 13px;
+    text-align: center;
+  }
+}
 
 @media only screen and (max-width: 900px) {
+  .company-para  {
+    font-size: 13px;
+    text-align: center;
+    margin: 0 auto;
+  }
   .Survey form textarea {
     width: 90%;
   }
