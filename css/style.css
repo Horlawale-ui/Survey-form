@@ -1,58 +1,56 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-  
-body{
-   /* background:#92bde7;
+
+body {
+  /* background:#92bde7;
     color:#485e74;
     line-height:1.6;
     padding:1em;*/
-    font-family: Tahoma, sans-serif;
-    background: url("https://image.freepik.com/free-vector/blue-abstract-background_1409-1226.jpg") center no-repeat;
-    background-size: cover;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    font-size: 12pt;
-    color: #2A293E;
-    
+  font-family: Tahoma, sans-serif;
+  background: url("https://image.freepik.com/free-vector/blue-abstract-background_1409-1226.jpg")
+    center no-repeat;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12pt;
+  color: #2a293e;
 }
 
-.container{
-    max-width:1170px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:1em;
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
 }
-  
-.wrapper{
-    
-    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
-  
-.wrapper > *{
-    padding-top: 1em;
-    
+
+.wrapper > * {
+  padding-top: 1em;
 }
-  
-.company-info{
+
+.company-info {
   position: relative;
-  background:#c9e6ff;
+  background: #c9e6ff;
   padding: 15px;
   text-align: center;
-  margin:0 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
-.company-info .logo{
-      width: 150px;
-}
-  
-.company-info h3{
-      font-size: 60px;
-      margin: 0;
+.company-info .logo {
+  width: 150px;
 }
 
-.company-info p{
+.company-info h3 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.company-info p {
   width: 70%;
   text-align: justify;
   margin: 15px auto;
@@ -60,22 +58,24 @@ body{
   font-size: 15px;
 }
 
-.Survey{
+.Survey {
   background: #fff;
   padding: 50px 100px;
-  border-top: 10px solid #2A293E;
+  border-top: 10px solid #2a293e;
 }
 
-  /* FORM STYLES */
-  label, input, textarea{
+/* FORM STYLES */
+label,
+input,
+textarea {
   font-size: 12pt;
   line-height: 12pt * 2;
-  }
+}
 /*
 input
   margin-bottom: $font-size * 2
   */
-.Survey form{
+.Survey form {
   padding: 5px;
 }
 
@@ -83,7 +83,7 @@ input
   margin: 10px 0;
 }
 
-.Survey form li .label{
+.Survey form li .label {
   margin: 10px 0;
 }
 
@@ -101,13 +101,14 @@ input
 .Survey form li .options-values input {
   justify-self: end;
 }
-  
-.Survey form button, .Survey form textarea{
-    width:100%;
-    margin: 10px 0;
-    padding:1em;
-    cursor: pointer;
-    border:1px solid #c9e6ff;
+
+.Survey form button,
+.Survey form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 1em;
+  cursor: pointer;
+  border: 1px solid #c9e6ff;
 }
 
 .Survey form.reveal #section-1 {
@@ -136,13 +137,15 @@ input
   transform: translateX(-2000px);
 }
 
-.Survey form #section-3, .Survey form .step3 .full {
+.Survey form #section-3,
+.Survey form .step3 .full {
   position: absolute;
   opacity: 0;
   transform: translateX(-2000px);
 }
 
-.Survey form.reveal-2 #section-3, .Survey form.reveal-2 .step3 .full {
+.Survey form.reveal-2 #section-3,
+.Survey form.reveal-2 .step3 .full {
   position: relative;
   opacity: 1;
   transform: translateX(0);
@@ -155,14 +158,14 @@ input
   padding-bottom: 10px;
   grid-template-columns: 1fr 2.5fr;
 }
-.Survey #section-3 .product-rating li{
+.Survey #section-3 .product-rating li {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .Survey form textarea {
-    width: 50%;
-    height: 150px;
+  width: 50%;
+  height: 150px;
 }
 
 .Survey form textarea.product-text {
@@ -197,91 +200,91 @@ input
 .Survey form textarea.product-text:focus {
   outline: none;
 }
-  
-.Survey form button{
-    background:#c9e6ff;
-    border:0;
-    text-transform: uppercase;
-}
-  
-.Survey form button:hover,.Survey form button:focus{
-    background:#92bde7;
-    color:#fff;
-    outline:0;
-    transition: background-color 2s ease-out;
+
+.Survey form button {
+  background: #c9e6ff;
+  border: 0;
+  text-transform: uppercase;
 }
 
-.Survey .alert-msg{
-      display:none;
-      text-align: center;
-      background: #79c879;
-      color:#fff !important;
-      letter-spacing:3px;
-      margin-top:1rem
+.Survey form button:hover,
+.Survey form button:focus {
+  background: #92bde7;
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
 }
 
+.Survey .alert-msg {
+  display: none;
+  text-align: center;
+  background: #79c879;
+  color: #fff !important;
+  letter-spacing: 3px;
+  margin-top: 1rem;
+}
 
 @media only screen and (max-width: 560px) {
   .company-info p {
     font-size: 13px;
     text-align: center;
-    text-align:justify;
+    text-align: justify;
     margin: 0 auto;
   }
-  
-  .company-info .logo{
+
+  .company-info .logo {
     width: 80px;
   }
-  
-  .company-info h3{
+
+  .company-info h3 {
     font-size: 30px;
   }
-  
+
   .Survey {
     padding: 15px 30px;
   }
-  
+
   .Survey form li .options-values {
     width: 100%;
     grid-template-columns: 1fr 6fr;
     grid-auto-flow: column;
   }
-  
+
   .Survey form li .options-values label {
     grid-column: 2;
   }
-  
+
   .Survey form li .options-values input {
     justify-self: start;
     grid-column: 1;
   }
-  
+
   .Survey form textarea {
     width: 90%;
   }
-  
+
   .Survey form.reveal #section-2 {
     height: 800px;
   }
-  .submitpopup-container .submit-popup{
-    background-color: #2A293E;
+  .submitpopup-container .submit-popup {
+    background-color: #2a293e;
     width: 250px;
     padding: 1rem;
     margin: auto;
   }
-  .submitpopup-container .submit-popup img{
+  .submitpopup-container .submit-popup img {
     width: 50px;
     height: 50px;
   }
 }
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 430px) {
   .company-para {
     font-size: 13px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .company-para  {
+  .company-para {
     font-size: 13px;
     text-align: center;
     margin: 0 auto;
@@ -289,14 +292,14 @@ input
   .Survey form textarea {
     width: 90%;
   }
-  
+
   .Survey #section-3 .product-rating {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr;
     font-size: 12px;
     margin-bottom: 10px;
   }
-  
+
   .Survey #section-3 .product-rating div {
     display: grid;
     grid-template-columns: 1fr 10fr;
@@ -310,18 +313,18 @@ input
   height: 100vh;
   top: 0;
   left: 0;
-  display: none;
+  display: flex;
 }
-.submitpopup-container .submit-popup{
-  background-color: #2A293E;
+.submitpopup-container .submit-popup {
+  background-color: #2a293e;
   width: 500px;
   padding: 1rem;
   margin: auto;
   text-align: center;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
-.submitpopup-container .submit-popup img{
+.submitpopup-container .submit-popup img {
   width: 100px;
   height: 100px;
 }
