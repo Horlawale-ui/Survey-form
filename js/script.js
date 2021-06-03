@@ -171,7 +171,7 @@ function submitForm(e) {
     claim,
     social,
     issues,
-	pricing,
+	  pricing,
     help,
     rating,
     channels,
@@ -182,7 +182,7 @@ function submitForm(e) {
   );
 
   //Show alert
-  window.location = "submitform.html";
+  window.location = "../submit/submitform.html";
 
   //Clear Form
   document.getElementById("contact-form").reset();
