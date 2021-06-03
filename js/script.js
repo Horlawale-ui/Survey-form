@@ -57,7 +57,7 @@ document
   .getElementById("btn-3")
   .addEventListener("click", checkPreviousValues, false);
 document
-  .getElementById("btn-4")
+  .getElementById("btn-4 btn")
   .addEventListener("click", checkPreviousValues, false);
 
 

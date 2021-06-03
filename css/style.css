@@ -217,12 +217,6 @@ input
   transition: background-color 2s ease-out;
 }
 
-.Survey form button.last-btn {
-  width: 105%;
-  transform: translateX(-5%);
-}
-
-
 .Survey .alert-msg {
   display: none;
   text-align: center;
@@ -242,11 +236,6 @@ input
 
   .company-info .logo {
     width: 80px;
-  }
-
-  .Survey form button.last-btn {
-    width: 115%;
-    transform: translateX(-10%);
   }
 
   .company-info h3 {
