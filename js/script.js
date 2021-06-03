@@ -145,6 +145,7 @@ function submitForm(e) {
   var claim = document.querySelector('input[name="answer-4"]:checked');
   var social = document.querySelector('input[name="answer-5"]:checked');
   var issues = document.querySelector('input[name="answer-6"]:checked');
+  var pricing = document.querySelector('input[name="answer-7"]:checked');
   var help = getInputVal("help");
   var rating = document.querySelector('input[name="number"]:checked');
   var channels = document.querySelector('input[name="choice"]:checked');
@@ -170,6 +171,7 @@ function submitForm(e) {
     claim,
     social,
     issues,
+	pricing,
     help,
     rating,
     channels,
@@ -207,6 +209,7 @@ function saveMessage(
   claim,
   social,
   issues,
+  pricing,
   help,
   rating,
   channels,
@@ -232,6 +235,7 @@ function saveMessage(
     claimRating: claim.value,
     socialRating: social.value,
     issuesrating: issues.value,
+	pricingrating: pricing.value,
     experience: help,
     lasacoRating: rating.value,
     channelMethod: channels.value,

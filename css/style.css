@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -7,7 +9,7 @@ body {
     color:#485e74;
     line-height:1.6;
     padding:1em;*/
-  font-family: Tahoma, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: url("https://image.freepik.com/free-vector/blue-abstract-background_1409-1226.jpg")
     center no-repeat;
   background-size: cover;
@@ -263,9 +265,6 @@ input
     width: 90%;
   }
 
-  .Survey form.reveal #section-2 {
-    height: 800px;
-  }
   .submitpopup-container .submit-popup {
     background-color: #2a293e;
     width: 250px;
@@ -306,7 +305,10 @@ input
     grid-template-rows: repeat(1fr, 6);
   }
 }
-
+.body-syle{
+	background: url("https://image.freepik.com/free-vector/blue-abstract-background_1409-1226.jpg")
+	center no-repeat;
+}
 .submitpopup-container {
   position: absolute;
   width: 100%;
