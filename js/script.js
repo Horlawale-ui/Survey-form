@@ -53,54 +53,36 @@ document
 document
   .getElementById("btn-2")
   .addEventListener("click", checkSecondValues, false);
+document
+  .getElementById("btn-3")
+  .addEventListener("click", checkPreviousValues, false);
+document
+  .getElementById("btn-4")
+  .addEventListener("click", checkPreviousValues, false);
+
+
 
 function checkFirstValues() {
-  var age = document.querySelectorAll('input[data-name="age"]'),
-    education = document.querySelectorAll('input[data-name="files"]'),
-    occupation = document.querySelectorAll('input[data-name="occupation"]'),
-    gender = document.getElementById("option-values"),
-    genderValue = gender.options[gender.selectedIndex].value.length;
-  (selectOption = document.getElementById("select")),
-    (selectOptionValue =
-      selectOption.options[selectOption.selectedIndex].value);
-  if (genderValue < 7) {
-    for (var i = 0; i < arr.length; i++) {
-      if (selectOptionValue === arr[i]) {
-        occupation.forEach(function (e) {
-          if (e.checked) {
-            age.forEach(function (e) {
-              if (e.checked) {
-                education.forEach(function (e) {
-                  if (e.checked) {
-                    var form = document.querySelector("form");
-                    form.classList.add("reveal");
-                  }
-                });
-              }
-            });
-          }
-        });
-      }
-    }
-  }
+  var form = document.querySelector("form");
+  form.classList.add("reveal");
 }
 
 function checkSecondValues() {
-  var satisfied = document.querySelectorAll('input[data-name="satisfied"]'),
-    textField = document.getElementById("neccessitate").value,
-    recommend = document.querySelectorAll('input[data-name="yes"]');
-  satisfied.forEach(function (e) {
-    if (e.checked) {
-      if (textField.length > 2) {
-        recommend.forEach(function (e) {
-          if (e.checked) {
-            var form = document.querySelector("form");
-            form.classList.add("reveal-2");
-          }
-        });
-      }
-    }
-  });
+  var form = document.querySelector("form");
+  form.classList.add("reveal-2");
+}
+
+function checkPreviousValues() {
+  var form = document.querySelector("form");
+
+  if (form.classList.contains("reveal")) {
+    form.classList.remove("reveal");
+  }
+
+  if (form.classList.contains("reveal-2")) {
+    form.classList.add("reveal");
+    form.classList.remove("reveal-2");
+  }
 }
 
 // Your web app's Firebase configuration
