@@ -50,7 +50,7 @@ function checkSecondValues() {
         recommend = document.querySelectorAll('input[data-name="yes"]');
        satisfied.forEach(function(e) {
            if (e.checked) {
-               if (textField.length > 10) {
+               if (textField.length > 2) {
                        recommend.forEach(function (e) {
                            if (e.checked) {
                                var form = document.querySelector('form');
@@ -116,12 +116,14 @@ function submitForm(e){
     //save message
     saveMessage(select, select2, employed,age, degree, satisfied, necessitate, yes, checkbox, product, customer, premium, claim, social, issues, help, rating, channels, improve, assistance, advice, ideal);
 
+
     //Show alert
     document.querySelector('.submitpopup-container').style.display = 'flex';
 
     //Hide Alert After reset
     setTimeout(function(){
      document.querySelector('.submitpopup-container').style.display = 'none'
+     location.reload();
     },8000);
 
     //Clear Form
