@@ -1,100 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lasaco's Customer Survey</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lasaco's Customer Survey</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="wrapper animated bounceInLeft">
-            <div class="company-info">
-               <div class="logo">
-                <img src="./img/Lasaco_logo_small.png" alt="Lasaco Assurance PLC" width="100%">
-               </div> 
-              <h3>Customer Satisfaction Survey</h3>
-              <div class="company-para">
-              <p>
-                Thank you for choosing Lasaco Assurance Plc as your preferred insurance partner.</p>
-<p>Lasaco Assurance Plc is conducting a survey on <strong>Customer Satisfaction </strong> and we will like to gain insights into your views about our Company, Products and Services. Your feedback will go a long way in helping us serve you better.</p>
-<p> Note that this survey will take only 3 minutes of your time and your responses will be collated anonymously </p>
-            </div>
-            </div>
-            <div class="Survey" >
-              <form id="contact-form">
-                <ol>
-                  <section id="section-1">
-                    <li>
-                        <div class="label"><label for="gender">Gender  </label></div>
-                        <select id="option-values">
-                          <option value="default">Select Sex</option>
-                          <option value="Male" id="gender_1" name=gender>Male</option>
-                          <option value="Female" id="gender_2" 
-                          name=gender>Female</option>
-                        </select>
-                    </li>
-                    <li>
-                      <div class="label"><label for="state">State of business/residence</label></div>
-                        <select id="select">
-                          <option value="default" id="state">Default</option>
-                        </select>
-                    </li>
-                    <li>
-                      <div class="label"><label for="occupation"> Occupation?</label></div> 
-                        <div class="options-values"><label for="occupation_1">Student</label><input type="radio" id="occupation_1" name="employed"  data-name="occupation" value="student"></div>
-                        <div class="options-values"><label for="occupation_2">Employed (public sector)</label><input type="radio" id="occupation_2" name="employed"  data-name="occupation" value="Employed(public sector)"></div>
-                        <div class="options-values"><label for="occupation_3">Employed (private sector)</label><input type="radio" id="occupation_3" name="employed"  data-name="occupation" value="Employed(private sector)"></div>
-                        <div class="options-values"><label for="occupation_4">Unemployed</label><input type="radio" id="occupation_4" name="employed"  data-name="occupation" value="unemployed"></div>
-                        <div class="options-values"><label for="occupation_5">Self-employed</label><input type="radio" id="occupation_5" name="employed"  data-name="occupation" value="Self-employed"></div>
-                        <div class="options-values"><label for="occupation_6">Retired</label><input type="radio" id="occupation_6" name="employed"  data-name="occupation" value="Retired"></div>
-                    </li>
-                    <li>
-                      <div class="label"><label for="">Age bracket?</label></div>
-                        <div class="options-values"><label for="age_1">18 - 20</label><input type="radio" id="age_1" name="age" value="18-20" data-name="age"></div>
-                        <div class="options-values"><label for="age_2">21 - 35</label><input type="radio" id="age_2" name="age" value="21-35" data-name="age"></div>
-                        <div class="options-values"><label for="age_3">35 - 50</label><input type="radio" id="age_3" name="age" value="35-50" data-name="age"></div>
-                      </li>
-                    <li>
-                      <div class="label"><label for="education">Level of education?</label></div>
-                       <div class="options-values"><label for="education_1">Primary</label><input type="radio" id="education_1" name="degree" data-name="files" value="primary"></div>
-                       <div class="options-values"><label for="education_2">Secondary</label><input type="radio" id="education_2" name="degree" data-name="files" value="Secondary"></div>
-                       <div class="options-values"><label for="education_3">Diploma</label><input type="radio" id="education_3" name="degree" data-name="files" value="Diploma"></div>
-                       <div class="options-values"><label for="education_4">HND/BSC</label><input type="radio" id="education_4" name="degree" data-name="files" value="HND/BSC"></div>
-                       <div class="options-values"><label for="education_5">MSC/PHD</label><input type="radio" id="education_5" name="degree" data-name="files" value="MSD/PHD"></div>
-                    </li>
-                    <p class="full">
-                      <button id="btn-1" type="button">Next</button>
-                    </p>
-                  </section>
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <div class="logo">
+            <img
+              src="./img/Lasaco_logo_small.png"
+              alt="Lasaco Assurance PLC"
+              width="100%"
+            />
+          </div>
+          <h3>Customer Satisfaction Survey</h3>
+          <div class="company-para">
+            <p>
+              Thank you for choosing Lasaco Assurance Plc as your preferred
+              insurance partner.
+            </p>
+            <p>
+              Lasaco Assurance Plc is conducting a survey on
+              <strong>Customer Satisfaction </strong> and we will like to gain
+              insights into your views about our Company, Products and Services.
+              Your feedback will go a long way in helping us serve you better.
+            </p>
+            <p>
+              Note that this survey will take only 3 minutes of your time and
+              your responses will be collated anonymously
+            </p>
+          </div>
+        </div>
+        <div class="Survey">
+          <form id="contact-form">
+            <ol>
+              <section id="section-1">
+                <li>
+                  <div class="label"><label for="gender">Gender </label></div>
+                  <select id="option-values">
+                    <option value="default">Select Sex</option>
+                    <option value="Male" id="gender_1" name="gender">
+                      Male
+                    </option>
+                    <option value="Female" id="gender_2" name="gender">
+                      Female
+                    </option>
+                  </select>
+                </li>
+                <li>
+                  <div class="label">
+                    <label for="state">State of business/residence</label>
+                  </div>
+                  <select id="select">
+                    <option value="default" id="state">Default</option>
+                  </select>
+                </li>
+                <li>
+                  <div class="label">
+                    <label for="occupation"> Occupation?</label>
+                  </div>
+                  <div class="options-values">
+                    <label for="occupation_1">Student</label
+                    ><input
+                      type="radio"
+                      id="occupation_1"
+                      name="employed"
+                      data-name="occupation"
+                      value="student"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="occupation_2">Employed (public sector)</label
+                    ><input
+                      type="radio"
+                      id="occupation_2"
+                      name="employed"
+                      data-name="occupation"
+                      value="Employed(public sector)"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="occupation_3">Employed (private sector)</label
+                    ><input
+                      type="radio"
+                      id="occupation_3"
+                      name="employed"
+                      data-name="occupation"
+                      value="Employed(private sector)"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="occupation_4">Unemployed</label
+                    ><input
+                      type="radio"
+                      id="occupation_4"
+                      name="employed"
+                      data-name="occupation"
+                      value="unemployed"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="occupation_5">Self-employed</label
+                    ><input
+                      type="radio"
+                      id="occupation_5"
+                      name="employed"
+                      data-name="occupation"
+                      value="Self-employed"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="occupation_6">Retired</label
+                    ><input
+                      type="radio"
+                      id="occupation_6"
+                      name="employed"
+                      data-name="occupation"
+                      value="Retired"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div class="label"><label for="">Age bracket?</label></div>
+                  <div class="options-values">
+                    <label for="age_1">18 - 20</label
+                    ><input
+                      type="radio"
+                      id="age_1"
+                      name="age"
+                      value="18-20"
+                      data-name="age"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="age_2">21 - 35</label
+                    ><input
+                      type="radio"
+                      id="age_2"
+                      name="age"
+                      value="21-35"
+                      data-name="age"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="age_3">35 - 50</label
+                    ><input
+                      type="radio"
+                      id="age_3"
+                      name="age"
+                      value="35-50"
+                      data-name="age"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div class="label">
+                    <label for="education">Level of education?</label>
+                  </div>
+                  <div class="options-values">
+                    <label for="education_1">Primary</label
+                    ><input
+                      type="radio"
+                      id="education_1"
+                      name="degree"
+                      data-name="files"
+                      value="primary"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="education_2">Secondary</label
+                    ><input
+                      type="radio"
+                      id="education_2"
+                      name="degree"
+                      data-name="files"
+                      value="Secondary"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="education_3">Diploma</label
+                    ><input
+                      type="radio"
+                      id="education_3"
+                      name="degree"
+                      data-name="files"
+                      value="Diploma"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="education_4">HND/BSC</label
+                    ><input
+                      type="radio"
+                      id="education_4"
+                      name="degree"
+                      data-name="files"
+                      value="HND/BSC"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="education_5">MSC/PHD</label
+                    ><input
+                      type="radio"
+                      id="education_5"
+                      name="degree"
+                      data-name="files"
+                      value="MSD/PHD"
+                    />
+                  </div>
+                </li>
+                <p class="full">
+                  <button id="btn-1" type="button">Next</button>
+                </p>
+              </section>
 
-                  <section id="section-2">
-                    <li>
-                      <div class="label"><label for="">Overall, how satisfied are you with Lasaco Assurance Plc products and services?</label></div>
-                        <div class="options-values"><label for="satisfied">Satisfied</label><input type="radio" id="satisfied" name="satisfied" data-name="satisfied" value="satisfied"></div>
-                        <div class="options-values"><label for="unsatisfied">Unsatisfied</label><input type="radio" id="unsatisfied" name="satisfied" data-name="satisfied" value="unsatisfied"></div>
-                    </li>
-                    <li>
-                      <label for="">Kindly suggest possbile ways to give you more delightful service experience?</label>
-                      <div>
-                        <textarea title="Reason for the above answer" id="neccessitate"></textarea>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="label"><label for="">Would you recommend friends and family to insure with Lasaco Assurance Plc?</label></div>
-                        <div class="options-values"><label for="yes">Yes</label><input type="radio" id="yes" name="y/n" data-name="yes" value="yes"></div>
-                        <div class="options-values"><label for="no">No</label><input type="radio" id="no" name="y/n" data-name="yes" value="no"></div>
-                    </li>
-                    <p class="full">
-                      <button id="btn-2" type="button">Next</button>
-                    </p>
-                  </section>
+              <section id="section-2">
+                <li>
+                  <div class="label">
+                    <label for=""
+                      >Overall, how satisfied are you with Lasaco Assurance Plc
+                      products and services?</label
+                    >
+                  </div>
+                  <div class="options-values">
+                    <label for="satisfied">Satisfied</label
+                    ><input
+                      type="radio"
+                      id="satisfied"
+                      name="satisfied"
+                      data-name="satisfied"
+                      value="satisfied"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="unsatisfied">Unsatisfied</label
+                    ><input
+                      type="radio"
+                      id="unsatisfied"
+                      name="satisfied"
+                      data-name="satisfied"
+                      value="unsatisfied"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <label for=""
+                    >Kindly suggest possbile ways to give you more delightful
+                    service experience?</label
+                  >
+                  <div>
+                    <textarea
+                      title="Reason for the above answer"
+                      id="neccessitate"
+                    ></textarea>
+                  </div>
+                </li>
+                <li>
+                  <div class="label">
+                    <label for=""
+                      >Would you recommend friends and family to insure with
+                      Lasaco Assurance Plc?</label
+                    >
+                  </div>
+                  <div class="options-values">
+                    <label for="yes">Yes</label
+                    ><input
+                      type="radio"
+                      id="yes"
+                      name="y/n"
+                      data-name="yes"
+                      value="yes"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="no">No</label
+                    ><input
+                      type="radio"
+                      id="no"
+                      name="y/n"
+                      data-name="yes"
+                      value="no"
+                    />
+                  </div>
+                </li>
+                <p class="full">
+                  <button id="btn-2" type="button">Next</button>
+                </p>
+              </section>
 
-                  <section id="section-3">
-                    <!---checkbox
+              <section id="section-3">
+                <!---checkbox
                     <li>
                       <div class="label"> <label for=""> Which of our insurance products are you familiar with? </label> </div>
                       <div>
@@ -107,167 +316,493 @@
                         <input type="checkbox" class="known-product1" name="known-product" value="Others"><label for="Others">Others</label>
                       </div>
                     </li>   -->
-                    <li>
-                      <div class="label"> <label for=""> Which of our insurance products are you familiar with? </label> </div>
-                      <div>
-                        <input type="radio" class="known-product1" name="known-product" value="Group-life"><label for="Group-life">Group-life</label>
-                        <input type="radio" class="known-product1" name="known-product" value="Individual-Life"><label for="Individual-Life">Individual Life</label>
-                        <input type="radio" class="known-product1" name="known-product" value="Motor-Insurance"><label for="Motor-Insurance">Motor-Insurance</label>
-                        <input type="radio" class="known-product1" name="known-product" value="Fire and Burglary"><label for="Fire and Burglary">Fire and Burglary</label>
-                        <input type="radio" class="known-product1" name="known-product" value="Goods in transit"><label for="Goods in transit">Goods in transit</label>
-                        <input type="radio" class="known-product1" name="known-product" value="Marine and Aviation"><label for="Marine and Aviation">Marine and Aviation</label>
-                        <input type="radio" class="known-product1" name="known-product" value="Others"><label for="Others">Others</label>
-                      </div>
-                    </li> 
-                    <li>
-                      <div class="label"><label for="">How would you rate the following services?</label></div>
-                      <div class="product-rating"><label for="">Product Enquiry</label>
-                        <div>
-                          <input type="radio" id="very-dissatisfied" name="answer-1" value="very-dissatisfied"><label for="very-dissatisfied">Very-Dissatisfied</label>
-                          <input type="radio" id="dissatisfied" name="answer-1" value="dissatisfied"><label for="dissatisfied">Dissatisfied</label>
-                          <input type="radio" id="somewhat-satisfied" name="answer-1" value="somewhat-satisfied"><label for="somewhat-satisfied">Somewhat Satisfied</label>
-                          <input type="radio" id="satisfied" name="answer-1" value="satisfied"><label for="satisfied">Satisfied</label>
-                          <input type="radio" id="very-satisfied" name="answer-1" value="very-satisfied"><label for="very-satisfied">Very Satisfied</label>
-                        </div>
-                      </div>
-                      <div class="product-rating"><label for="">Customer Service and Support</label>
-                        <div>
-                          <input type="radio" id="very-dissatisfied-2" name="answer-2" value="very-dissatisfied"><label for="very-dissatisfied-2">Very-Dissatisfied</label>
-                          <input type="radio" id="dissatisfied-2" name="answer-2" value="dissatisfied"><label for="dissatisfied-2">Dissatisfied</label>
-                          <input type="radio" id="somewhat-satisfied-2" name="answer-2" value="somewhat-satisfied"><label for="somewhat-satisfied-2">Somewhat Satisfied</label>
-                          <input type="radio" id="satisfied-2" name="answer-2" value="satisfied"><label for="satisfied-2">Satisfied</label>
-                          <input type="radio" id="very-satisfied-2" name="answer-2" value="very-satisfied"><label 
-                          for="very-satisfied-2">Very Satisfied</label>
-                        </div>
-                      </div>
-                      <div class="product-rating"><label for="">Premium Payment</label>
-                        <div>
-                          <input type="radio" id="very-dissatisfied-3" name="answer-3" value="very-dissatisfied"><label for="very-dissatisfied-3">Very-Dissatisfied</label>
-                          <input type="radio" id="dissatisfied-3" name="answer-3" value="dissatisfied"><label for="dissatisfied-3">Dissatisfied</label>
-                          <input type="radio" id="somewhat-satisfied-3" name="answer-3" value="somewhat-satisfied"><label for="somewhat-satisfied-3">Somewhat Satisfied</label>
-                          <input type="radio" id="satisfied-3" name="answer-3" value="satisfied"><label for="satisfied-3">Satisfied</label>
-                          <input type="radio" id="very-satisfied-3" name="answer-3" value="very-satisfied"><label 
-                          for="very-satisfied-3">Very Satisfied</label>
-                        </div>
-                      </div>
-                      <div class="product-rating"><label for="">Claim Processing</label>
-                        <div>
-                          <input type="radio" id="very-dissatisfied-4" name="answer-4" value="very-dissatisfied"><label for="very-dissatisfied-4">Very-Dissatisfied</label>
-                          <input type="radio" id="dissatisfied-4" name="answer-4" value="dissatisfied"><label for="dissatisfied-4">Dissatisfied</label>
-                          <input type="radio" id="somewhat-satisfied-4" name="answer-4" value="somewhat-satisfied"><label for="somewhat-satisfied-4">Somewhat Satisfied</label>
-                          <input type="radio" id="satisfied-4" name="answer-4" value="satisfied"><label for="satisfied-4">Satisfied</label>
-                          <input type="radio" id="very-satisfied-4" name="answer-4" value="very-satisfied"><label 
-                          for="very-satisfied-4">Very Satisfied</label>
-                        </div>
-                      </div>
-                      <div class="product-rating"><label for="">Social Media Engagement</label>
-                        <div>
-                          <input type="radio" id="very-dissatisfied-5" name="answer-5" value="very-dissatisfied"><label for="very-dissatisfied-5">Very-Dissatisfied</label>
-                          <input type="radio" id="dissatisfied-5" name="answer-5" value="dissatisfied"><label for="dissatisfied-5">Dissatisfied</label>
-                          <input type="radio" id="somewhat-satisfied-5" name="answer-5" value="somewhat-satisfied"><label for="somewhat-satisfied-5">Somewhat Satisfied</label>
-                          <input type="radio" id="satisfied-5" name="answer-5" value="satisfied"><label for="satisfied-5">Satisfied</label>
-                          <input type="radio" id="very-satisfied-5" name="answer-5" value="very-satisfied"><label 
-                          for="very-satisfied-5">Very Satisfied</label>
-                        </div>
-                      </div>
-                      <div class="product-rating"><label for="">Issues Resolution</label>
-                        <div>
-                          <input type="radio" id="very-dissatisfied-6" name="answer-6" value="very-dissatisfied"><label for="very-dissatisfied-6">Very-Dissatisfied</label>
-                          <input type="radio" id="dissatisfied-6" name="answer-6" value="dissatisfied"><label for="dissatisfied-6">Dissatisfied</label>
-                          <input type="radio" id="somewhat-satisfied-6" name="answer-6" value="somewhat-satisfied"><label for="somewhat-satisfied-6">Somewhat Satisfied</label>
-                          <input type="radio" id="satisfied-6" name="answer-6" value="satisfied"><label for="satisfied-6">Satisfied</label>
-                          <input type="radio" id="very-satisfied-6" name="answer-6" value="very-satisfied"><label 
-                          for="very-satisfied-6">Very Satisfied</label>
-                        </div>
-                      </div>
-                      <div>
-                        <textarea class="product-text" id="help" title="Any comment on the above" placeholder="Any comment on the above (if any) "></textarea>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="label"><label for="">On a scale of 5, how would you rate Lasaco Assurance Plc compare to other insurance companies?</label></div>
-                      <div>
-                        <input type="radio" id="number-one" name="number" value="1"><label for="number-one">1(very poor) </label>
-                        <input type="radio" id="number-two" name="number" value="2"><label for="number-two">2 (poor)</label>
-                        <input type="radio" id="number-three" name="number" value="3"><label for="number-three">3 (Netural)</label>
-                        <input type="radio" id="number-four" name="number" value="4"><label for="number-four">4 (good)</label>
-                        <input type="radio" id="number-five" name="number" value="5"><label for="number-five">5 (very good)</label>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="label"><label for="">Considering the new normal, would you like to stick with the traditional way of buying insurance products from us or you prefer digitalized channels?</label></div>
-                      <div>
-                        <div class="options-values"><label for="traditional">Traditional</label><input type="radio" id="traditional" name="choice" value="Traditional"></div>
-                        <div class="options-values"><label for="digital">Digital</label><input type="radio" id="digital" name="choice" value="Digital"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="label"><label for="">List the top 3 areas you would like Lasaco Assurance to improve on</label></div>
-                      <div>
-                        <ol>
-                          <label for="first">
-                            <li>
-                              <textarea id="improve" class="needed-text" ></textarea>
-                            </li>
-                          </label>
-                          <label for="second">
-                            <li>
-                              <textarea id="assistance" class="needed-text" ></textarea>
-                            </li>
-                          </label>
-                          <label for="third">
-                            <li>
-                              <textarea id="advice" class="needed-text" ></textarea>
-                            </li>
-                          </label>
-                        </ol>
-                      </div>
-                    </li>
-                    <li style="margin-top: 20px;">
-                      <div class="label"><label for="">What is your ideal Lasaco Assurance of the future?</label></div> 
-                        <div class="options-values"><label for="ideal_1">Highly digitalized environment</label><input type="radio" id="ideal_1" name="ideal_options" value="Highly digitalized environment "></div>
-                        <div class="options-values"><label for="ideal_2">Business as usual</label><input type="radio" id="ideal_2" name="ideal_options" value="Business as usual"></div>
-                        <div class="options-values"><label for="ideal_3">Upgraded customer services and service delivery channels</label><input type="radio" id="ideal_3" name="ideal_options" value="Upgraded customer services and service delivery channels"></div>
-                        <div class="options-values"><label for="ideal_4">Enhanced employee civility and engagement</label><input type="radio" id="ideal_4" name="ideal_options" value="Enhanced employee civility and engagement"></div>
-                        <div class="options-values"><label for="ideal_5">Improved claims processing and premium payment</label><input type="radio" id="ideal_5" name="ideal_options" value="Improved claims processing and premium payment "></div>
-                        <div class="options-values"><label for="ideal_6">Increased awareness</label><input type="radio" id="ideal_6" name="ideal_options" value="Increased awareness"></div>
-                    </li>
-                  </section>
-                </ol>
-                <section class="step3">
-                  <p class="full">
-                    <button id="btn" type="submit">Submit</button>
-                  </p>
-                  <p style="text-align: center;">
-                    &copy; COPYRIGHT | LASACO | Developed by Helloworldhub
-                  </p>
-                  <p class="alert-msg">Survey Successfully Sent!</p>
-                </section>
-
-              </form>
-          </div>
-           <!----submitbutton popup-->
-        <div class="submitpopup-container">
-          <div class="submit-popup">
-            <img src="./img/bxs-check-circle.svg" alt="checked box">
-            <h1>	
-              Thank you.
-            </h1>
-            <div class="submit-popup-content">
-              <p class="main-content__body">Thanks a bunch for filling that out. It means a lot to us, just like you do! We really appreciate you giving us a moment of your time today. Thanks for being you.</p>
-            </div>
-          </div>
+                <li>
+                  <div class="label">
+                    <label for="">
+                      Which of our insurance products are you familiar with?
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      class="known-product1"
+                      name="known-product"
+                      value="Group-life"
+                    /><label for="Group-life">Group-life</label>
+                    <input
+                      type="radio"
+                      class="known-product1"
+                      name="known-product"
+                      value="Individual-Life"
+                    /><label for="Individual-Life">Individual Life</label>
+                    <input
+                      type="radio"
+                      class="known-product1"
+                      name="known-product"
+                      value="Motor-Insurance"
+                    /><label for="Motor-Insurance">Motor-Insurance</label>
+                    <input
+                      type="radio"
+                      class="known-product1"
+                      name="known-product"
+                      value="Fire and Burglary"
+                    /><label for="Fire and Burglary">Fire and Burglary</label>
+                    <input
+                      type="radio"
+                      class="known-product1"
+                      name="known-product"
+                      value="Goods in transit"
+                    /><label for="Goods in transit">Goods in transit</label>
+                    <input
+                      type="radio"
+                      class="known-product1"
+                      name="known-product"
+                      value="Marine and Aviation"
+                    /><label for="Marine and Aviation"
+                      >Marine and Aviation</label
+                    >
+                    <input
+                      type="radio"
+                      class="known-product1"
+                      name="known-product"
+                      value="Others"
+                    /><label for="Others">Others</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="label">
+                    <label for=""
+                      >How would you rate the following services?</label
+                    >
+                  </div>
+                  <div class="product-rating">
+                    <label for="">Product Enquiry</label>
+                    <div>
+                      <input
+                        type="radio"
+                        id="very-dissatisfied"
+                        name="answer-1"
+                        value="very-dissatisfied"
+                      /><label for="very-dissatisfied">Very-Dissatisfied</label>
+                      <input
+                        type="radio"
+                        id="dissatisfied"
+                        name="answer-1"
+                        value="dissatisfied"
+                      /><label for="dissatisfied">Dissatisfied</label>
+                      <input
+                        type="radio"
+                        id="somewhat-satisfied"
+                        name="answer-1"
+                        value="somewhat-satisfied"
+                      /><label for="somewhat-satisfied"
+                        >Somewhat Satisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="satisfied"
+                        name="answer-1"
+                        value="satisfied"
+                      /><label for="satisfied">Satisfied</label>
+                      <input
+                        type="radio"
+                        id="very-satisfied"
+                        name="answer-1"
+                        value="very-satisfied"
+                      /><label for="very-satisfied">Very Satisfied</label>
+                    </div>
+                  </div>
+                  <div class="product-rating">
+                    <label for="">Customer Service and Support</label>
+                    <div>
+                      <input
+                        type="radio"
+                        id="very-dissatisfied-2"
+                        name="answer-2"
+                        value="very-dissatisfied"
+                      /><label for="very-dissatisfied-2"
+                        >Very-Dissatisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="dissatisfied-2"
+                        name="answer-2"
+                        value="dissatisfied"
+                      /><label for="dissatisfied-2">Dissatisfied</label>
+                      <input
+                        type="radio"
+                        id="somewhat-satisfied-2"
+                        name="answer-2"
+                        value="somewhat-satisfied"
+                      /><label for="somewhat-satisfied-2"
+                        >Somewhat Satisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="satisfied-2"
+                        name="answer-2"
+                        value="satisfied"
+                      /><label for="satisfied-2">Satisfied</label>
+                      <input
+                        type="radio"
+                        id="very-satisfied-2"
+                        name="answer-2"
+                        value="very-satisfied"
+                      /><label for="very-satisfied-2">Very Satisfied</label>
+                    </div>
+                  </div>
+                  <div class="product-rating">
+                    <label for="">Premium Payment</label>
+                    <div>
+                      <input
+                        type="radio"
+                        id="very-dissatisfied-3"
+                        name="answer-3"
+                        value="very-dissatisfied"
+                      /><label for="very-dissatisfied-3"
+                        >Very-Dissatisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="dissatisfied-3"
+                        name="answer-3"
+                        value="dissatisfied"
+                      /><label for="dissatisfied-3">Dissatisfied</label>
+                      <input
+                        type="radio"
+                        id="somewhat-satisfied-3"
+                        name="answer-3"
+                        value="somewhat-satisfied"
+                      /><label for="somewhat-satisfied-3"
+                        >Somewhat Satisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="satisfied-3"
+                        name="answer-3"
+                        value="satisfied"
+                      /><label for="satisfied-3">Satisfied</label>
+                      <input
+                        type="radio"
+                        id="very-satisfied-3"
+                        name="answer-3"
+                        value="very-satisfied"
+                      /><label for="very-satisfied-3">Very Satisfied</label>
+                    </div>
+                  </div>
+                  <div class="product-rating">
+                    <label for="">Claim Processing</label>
+                    <div>
+                      <input
+                        type="radio"
+                        id="very-dissatisfied-4"
+                        name="answer-4"
+                        value="very-dissatisfied"
+                      /><label for="very-dissatisfied-4"
+                        >Very-Dissatisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="dissatisfied-4"
+                        name="answer-4"
+                        value="dissatisfied"
+                      /><label for="dissatisfied-4">Dissatisfied</label>
+                      <input
+                        type="radio"
+                        id="somewhat-satisfied-4"
+                        name="answer-4"
+                        value="somewhat-satisfied"
+                      /><label for="somewhat-satisfied-4"
+                        >Somewhat Satisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="satisfied-4"
+                        name="answer-4"
+                        value="satisfied"
+                      /><label for="satisfied-4">Satisfied</label>
+                      <input
+                        type="radio"
+                        id="very-satisfied-4"
+                        name="answer-4"
+                        value="very-satisfied"
+                      /><label for="very-satisfied-4">Very Satisfied</label>
+                    </div>
+                  </div>
+                  <div class="product-rating">
+                    <label for="">Social Media Engagement</label>
+                    <div>
+                      <input
+                        type="radio"
+                        id="very-dissatisfied-5"
+                        name="answer-5"
+                        value="very-dissatisfied"
+                      /><label for="very-dissatisfied-5"
+                        >Very-Dissatisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="dissatisfied-5"
+                        name="answer-5"
+                        value="dissatisfied"
+                      /><label for="dissatisfied-5">Dissatisfied</label>
+                      <input
+                        type="radio"
+                        id="somewhat-satisfied-5"
+                        name="answer-5"
+                        value="somewhat-satisfied"
+                      /><label for="somewhat-satisfied-5"
+                        >Somewhat Satisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="satisfied-5"
+                        name="answer-5"
+                        value="satisfied"
+                      /><label for="satisfied-5">Satisfied</label>
+                      <input
+                        type="radio"
+                        id="very-satisfied-5"
+                        name="answer-5"
+                        value="very-satisfied"
+                      /><label for="very-satisfied-5">Very Satisfied</label>
+                    </div>
+                  </div>
+                  <div class="product-rating">
+                    <label for="">Issues Resolution</label>
+                    <div>
+                      <input
+                        type="radio"
+                        id="very-dissatisfied-6"
+                        name="answer-6"
+                        value="very-dissatisfied"
+                      /><label for="very-dissatisfied-6"
+                        >Very-Dissatisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="dissatisfied-6"
+                        name="answer-6"
+                        value="dissatisfied"
+                      /><label for="dissatisfied-6">Dissatisfied</label>
+                      <input
+                        type="radio"
+                        id="somewhat-satisfied-6"
+                        name="answer-6"
+                        value="somewhat-satisfied"
+                      /><label for="somewhat-satisfied-6"
+                        >Somewhat Satisfied</label
+                      >
+                      <input
+                        type="radio"
+                        id="satisfied-6"
+                        name="answer-6"
+                        value="satisfied"
+                      /><label for="satisfied-6">Satisfied</label>
+                      <input
+                        type="radio"
+                        id="very-satisfied-6"
+                        name="answer-6"
+                        value="very-satisfied"
+                      /><label for="very-satisfied-6">Very Satisfied</label>
+                    </div>
+                  </div>
+                  <div>
+                    <textarea
+                      class="product-text"
+                      id="help"
+                      title="Any comment on the above"
+                      placeholder="Any comment on the above (if any) "
+                    ></textarea>
+                  </div>
+                </li>
+                <li>
+                  <div class="label">
+                    <label for=""
+                      >On a scale of 5, how would you rate Lasaco Assurance Plc
+                      compare to other insurance companies?</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="number-one"
+                      name="number"
+                      value="1"
+                    /><label for="number-one">1(very poor) </label>
+                    <input
+                      type="radio"
+                      id="number-two"
+                      name="number"
+                      value="2"
+                    /><label for="number-two">2 (poor)</label>
+                    <input
+                      type="radio"
+                      id="number-three"
+                      name="number"
+                      value="3"
+                    /><label for="number-three">3 (Netural)</label>
+                    <input
+                      type="radio"
+                      id="number-four"
+                      name="number"
+                      value="4"
+                    /><label for="number-four">4 (good)</label>
+                    <input
+                      type="radio"
+                      id="number-five"
+                      name="number"
+                      value="5"
+                    /><label for="number-five">5 (very good)</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="label">
+                    <label for=""
+                      >Considering the new normal, would you like to stick with
+                      the traditional way of buying insurance products from us
+                      or you prefer digitalized channels?</label
+                    >
+                  </div>
+                  <div>
+                    <div class="options-values">
+                      <label for="traditional">Traditional</label
+                      ><input
+                        type="radio"
+                        id="traditional"
+                        name="choice"
+                        value="Traditional"
+                      />
+                    </div>
+                    <div class="options-values">
+                      <label for="digital">Digital</label
+                      ><input
+                        type="radio"
+                        id="digital"
+                        name="choice"
+                        value="Digital"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="label">
+                    <label for=""
+                      >List the top 3 areas you would like Lasaco Assurance to
+                      improve on</label
+                    >
+                  </div>
+                  <div>
+                    <ol>
+                      <label for="first">
+                        <li>
+                          <textarea id="improve" class="needed-text"></textarea>
+                        </li>
+                      </label>
+                      <label for="second">
+                        <li>
+                          <textarea
+                            id="assistance"
+                            class="needed-text"
+                          ></textarea>
+                        </li>
+                      </label>
+                      <label for="third">
+                        <li>
+                          <textarea id="advice" class="needed-text"></textarea>
+                        </li>
+                      </label>
+                    </ol>
+                  </div>
+                </li>
+                <li style="margin-top: 20px">
+                  <div class="label">
+                    <label for=""
+                      >What is your ideal Lasaco Assurance of the future?</label
+                    >
+                  </div>
+                  <div class="options-values">
+                    <label for="ideal_1">Highly digitalized environment</label
+                    ><input
+                      type="radio"
+                      id="ideal_1"
+                      name="ideal_options"
+                      value="Highly digitalized environment "
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="ideal_2">Business as usual</label
+                    ><input
+                      type="radio"
+                      id="ideal_2"
+                      name="ideal_options"
+                      value="Business as usual"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="ideal_3"
+                      >Upgraded customer services and service delivery
+                      channels</label
+                    ><input
+                      type="radio"
+                      id="ideal_3"
+                      name="ideal_options"
+                      value="Upgraded customer services and service delivery channels"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="ideal_4"
+                      >Enhanced employee civility and engagement</label
+                    ><input
+                      type="radio"
+                      id="ideal_4"
+                      name="ideal_options"
+                      value="Enhanced employee civility and engagement"
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="ideal_5"
+                      >Improved claims processing and premium payment</label
+                    ><input
+                      type="radio"
+                      id="ideal_5"
+                      name="ideal_options"
+                      value="Improved claims processing and premium payment "
+                    />
+                  </div>
+                  <div class="options-values">
+                    <label for="ideal_6">Increased awareness</label
+                    ><input
+                      type="radio"
+                      id="ideal_6"
+                      name="ideal_options"
+                      value="Increased awareness"
+                    />
+                  </div>
+                </li>
+              </section>
+            </ol>
+            <section class="step3">
+              <p class="full">
+                <button id="btn" type="submit">Submit</button>
+              </p>
+              <p style="text-align: center">
+                &copy; COPYRIGHT | LASACO | Developed by Helloworldhub
+              </p>
+              <p class="alert-msg">Survey Successfully Sent!</p>
+            </section>
+          </form>
         </div>
-        </div>
+      </div>
     </div>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
-<!-- Script -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    <!-- Script -->
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
