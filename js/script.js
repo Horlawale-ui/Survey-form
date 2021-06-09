@@ -115,52 +115,132 @@ function submitForm(e) {
   var select = document.getElementById("option-values");
   var select2 = document.getElementById("select");
   let employed = document.querySelector('input[name="employed"]:checked');
+  if(employed != null) {   
+    employedValue = employed.value;  
+  }else{
+    employedValue = "null";
+  };
   let age = document.querySelector('input[name="age"]:checked');
+  if(age != null) {   
+    ageValue = age.value;  
+  }else{
+    ageValue = "null";
+  };
   let degree = document.querySelector('input[name="degree"]:checked');
+  if(degree != null) {   
+    degreeValue = degree.value;  
+  }else{
+    degreeValue = "null";
+  };
   let satisfied = document.querySelector('input[name="satisfied"]:checked');
+  if(satisfied != null) {   
+    satisfiedValue = satisfied.value;  
+  }else{
+    satisfiedValue = "null";
+  };
   var necessitate = getInputVal("neccessitate");
   let yes = document.querySelector('input[name="y/n"]:checked');
+  if(yes != null) {   
+    yesValue = yes.value;  
+  }else{
+    yesValue = "null";
+  };
   var checkbox = document.querySelector('input[name="known-product"]:checked');
+  if(checkbox != null) {   
+    checkboxValue = checkbox.value;  
+  }else{
+    checkboxValue = "null";
+  }
   var product = document.querySelector('input[name="answer-1"]:checked');
+  if(product != null) {   
+    productValue = product.value;  
+  }else{
+    productValue = "null";
+  };
   var customer = document.querySelector('input[name="answer-2"]:checked');
+  if(customer != null) {   
+    customerValue = customer.value;  
+  }else{
+    customerValue = "null";
+  };
   var premium = document.querySelector('input[name="answer-3"]:checked');
+  if(premium != null) {   
+    premiumValue = premium.value;  
+  }else{
+    premiumValue = "null";
+  };
   var claim = document.querySelector('input[name="answer-4"]:checked');
+  if(claim != null) {   
+    claimValue = claim.value;  
+  }else{
+    claimValue = "null";
+  };
   var social = document.querySelector('input[name="answer-5"]:checked');
+  if(social != null) {   
+    socialValue = social.value;  
+  }else{
+    socialValue = "null";
+  };
   var issues = document.querySelector('input[name="answer-6"]:checked');
+  if(issues != null) {   
+    issuesValue = issues.value;  
+  }else{
+    issuesValue = "null";
+  };
   var pricing = document.querySelector('input[name="answer-7"]:checked');
+  if(pricing != null) {   
+    pricingValue = pricing.value;  
+  }else{
+    pricingValue = "null";
+  };
   var help = getInputVal("help");
   var rating = document.querySelector('input[name="number"]:checked');
+  if(rating != null) {   
+    ratingValue = rating.value;  
+  }else{
+    ratingValue = "null";
+  };
   var channels = document.querySelector('input[name="choice"]:checked');
+  if(channels != null) {   
+    channelsValue = channels.value;  
+  }else{
+    channelsValue = "null";
+  };
   var improve = getInputVal("improve");
   var assistance = getInputVal("assistance");
   var advice = getInputVal("advice");
   var ideal = document.querySelector('input[name="ideal_options"]:checked');
+  if(ideal != null) {   
+    idealValue = ideal.value;  
+  }else{
+    idealValue = "null";
+  };
 
   //save message
   saveMessage(
     select,
     select2,
-    employed,
-    age,
-    degree,
-    satisfied,
+    employedValue,
+    ageValue,
+    degreeValue,
+    satisfiedValue,
     necessitate,
-    yes,
-    checkbox,
-    product,
-    customer,
-    premium,
-    claim,
-    social,
-    issues,
-	  pricing,
+    yesValue,
+    checkboxValue,
+    productValue,
+    customerValue,
+    premiumValue,
+    claimValue,
+    socialValue,
+    issuesValue,
+	  pricingValue,
     help,
-    rating,
-    channels,
+    ratingValue,
+    channelsValue,
     improve,
     assistance,
     advice,
-    ideal
+    idealValue
   );
 
   //Show alert
@@ -178,52 +258,52 @@ function getInputVal(id) {
 function saveMessage(
   select,
   select2,
-  employed,
-  age,
-  degree,
-  satisfied,
+  employedValue,
+  ageValue,
+  degreeValue,
+  satisfiedValue,
   necessitate,
-  yes,
-  checkbox,
-  product,
-  customer,
-  premium,
-  claim,
-  social,
-  issues,
-  pricing,
+  yesValue,
+  checkboxValue,
+  productValue,
+  customerValue,
+  premiumValue,
+  claimValue,
+  socialValue,
+  issuesValue,
+  pricingValue,
   help,
-  rating,
-  channels,
+  ratingValue,
+  channelsValue,
   improve,
   assistance,
   advice,
-  ideal
+  idealValue
 ) {
   var newMessageRef = messageRef.push();
   newMessageRef.set({
     gender: select.options[select.selectedIndex].value,
     state: select2.options[select2.selectedIndex].value,
-    occuption: employed.value,
-    age: age.value,
-    education: degree.value,
-    satisfication: satisfied.value,
+    occuption: employedValue,
+    age: ageValue,
+    education: degreeValue,
+    satisfication: satisfiedValue,
     necessitate: necessitate,
-    recommendation: yes.value,
-    knownProduct: checkbox.value,
-    productRating: product.value,
-    customerServiceRating: customer.value,
-    premiumRating: premium.value,
-    claimRating: claim.value,
-    socialRating: social.value,
-    issuesrating: issues.value,
-	pricingrating: pricing.value,
+    recommendation: yesValue,
+    knownProduct: checkboxValue,
+    productRating: productValue,
+    customerServiceRating: customerValue,
+    premiumRating: premiumValue,
+    claimRating: claimValue,
+    socialRating: socialValue,
+    issuesrating: issuesValue,
+	  pricingrating: pricingValue,
     experience: help,
-    lasacoRating: rating.value,
-    channelMethod: channels.value,
+    lasacoRating: ratingValue,
+    channelMethod: channelsValue,
     waystoImprove: improve,
     waystoImproveTwo: assistance,
     waystoImproveThree: advice,
-    ideal: ideal.value,
+    ideal: idealValue,
   });
 }
